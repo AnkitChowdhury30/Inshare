@@ -21,7 +21,7 @@ export type Box = {
     createdAt: Date;
     updatedAt: Date;
     code: string;
-    deleteAfter: keyof typeof DeleteAfterOptions;
+    deleteAfter: keyof typeof DeleteAfterOptions | Date;
     password?: string;
     name?: string;
     description?: string;
@@ -36,3 +36,4 @@ export type ErrorType =
     | "BOX_NOT_EXIST"
     | "PASSWORD_NOT_MATCH"
     | "INTERNAL_ERROR"
+    | "INVALID_PASSWORD"

@@ -75,7 +75,7 @@ export const validateRequestCreateBox = async (req: HttpRequest): Promise<Reques
     }
 
     // validate deleteAfter
-    if (!deleteAfter || !Object.keys(DeleteAfterOptions).includes(deleteAfter)) {
+    if (!deleteAfter || !Object.keys(DeleteAfterOptions).includes(deleteAfter as string)) {
         throw ApiError.InvalidFieldType("[deleteAfter] must be a valid option ${`}");
     }
 

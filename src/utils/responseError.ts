@@ -33,6 +33,11 @@ export class ApiError extends Error {
         return new ApiError(400, 'INVALID_FIELD_TYPE', message);
     }
 
+    // Invalid Type error
+    static InvalidPassword(message: string): ApiError {
+        return new ApiError(400, 'INVALID_PASSWORD', message);
+    }
+
     // Box not exist
     static BoxNotExist(msg = "Provide a valid box number"): ApiError {
         return new ApiError(404, 'BOX_NOT_EXIST', msg);

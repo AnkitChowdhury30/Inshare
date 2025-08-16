@@ -7,3 +7,7 @@ export const DeleteAfterOptions = {
     '2D': 172800,
     '3D': 259200
 };
+
+export const dbSchema = {
+    BOX: "boxes"
+};
