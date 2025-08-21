@@ -1,0 +1,19 @@
+@url=http://localhost:7071/api
+
+POST {{url}}/create-box
+Content-Type: application/json
+
+{
+    "data":[
+        {
+            "type":"text",
+            "text":"with password 123"
+        },
+        {
+            "type":"text",
+            "text":"This is another message in the box."
+        }
+    ],
+    "deleteAfter":"1D",
+    "password":"123"
+}

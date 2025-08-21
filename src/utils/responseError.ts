@@ -38,6 +38,11 @@ export class ApiError extends Error {
         return new ApiError(400, 'INVALID_PASSWORD', message);
     }
 
+    // Password Required
+    static PasswordRequired(): ApiError {
+        return new ApiError(400, 'PASSWORD_REQUIRED', "[password] is required for this box");
+    }
+
     // Box not exist
     static BoxNotExist(msg = "Provide a valid box number"): ApiError {
         return new ApiError(404, 'BOX_NOT_EXIST', msg);

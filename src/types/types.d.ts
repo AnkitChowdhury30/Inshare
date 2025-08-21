@@ -37,3 +37,4 @@ export type ErrorType =
     | "PASSWORD_NOT_MATCH"
     | "INTERNAL_ERROR"
     | "INVALID_PASSWORD"
+    | "PASSWORD_REQUIRED"

@@ -1,0 +1,15 @@
+@url=http://localhost:7071/api
+
+POST {{url}}/get-box
+Content-Type: application/json
+
+# {
+#       "code": "147081",
+#     "token": "9b112efec1f329853454095d61b89775f1c1b13d42b161d1ac519a26eb237110"
+# }
+
+{
+    "code": "163208",
+  "token": "d3d953e80eb608efd93eea5c14986818be8459e00ce672b688ea1e250aaf2ae6"
+    //"password": "123"
+}

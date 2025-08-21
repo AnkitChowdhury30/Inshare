@@ -75,7 +75,7 @@ export const controllerRequestGetBox = async (
         }
 
         if (box.password && !password) {
-            throw ApiError.MissingField("[password] is required for this box");
+            throw ApiError.PasswordRequired();
         }
         // check password if provided
         if (password && box.password !== password) {

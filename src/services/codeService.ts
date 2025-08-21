@@ -1,5 +1,4 @@
 import { createHmac } from 'crypto'
-import { ApiError } from '../utils/responseError'
 
 const hash_secret = process.env.ENV_HASH_SALT;
 
